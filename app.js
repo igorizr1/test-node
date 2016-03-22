@@ -2,7 +2,7 @@ var express = require('express');
 var path = require('path');
 var logger = require('morgan');
 
-var routes = require('./routes/films');
+var routes = require('./routes');
 
 var app = express();
 

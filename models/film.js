@@ -13,7 +13,8 @@ var Film = new Schema({
     title: { type: String, required: true },
     description: { type: String, required: false },
     image: { type: String, required: false },
-    modified: { type: Date, default: Date.now }
+    modified: { type: Date, default: Date.now },
+    related: [{ type: Schema.Types.ObjectId, ref: 'Film' }]
 });
 
 var FilmModel = mongoose.model('Film', Film);
